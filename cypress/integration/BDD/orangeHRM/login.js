@@ -20,3 +20,17 @@ When('Click on login button', () => {
 Then('Valid the Dashboard', () => {
     cy.get('.oxd-topbar-header-breadcrumb-module').should('have.text', 'Dashboard')
 })
+
+
+And('Enter the invalid Username', () => {
+    cy.get('[name="username"]').type('Admin12')
+})
+
+And('Enter the invalid Password', () => {
+    cy.get('[name="password"]').type('admin12321')
+})
+
+
+Then("Valid the Error message", ()=>{
+cy.get(".oxd-alert-content-text").should('have.text', "Invalid credentials")
+})
