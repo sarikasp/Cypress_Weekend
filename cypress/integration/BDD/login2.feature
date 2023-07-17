@@ -1,12 +1,12 @@
 Feature: Ecommerce Site: Orange HRM
 
-    # Scenario: Login with Valid Credentilas
-    #     Given Visit Orange HRM Site
-    #     And Enter the Username & Password
-    #         | Username | Password |
-    #         | Admin    | admin123 |
-    #     When Click on login button
-    #     Then Valid the Dashboard
+    Scenario: Login with Valid Credentilas
+        Given Visit Orange HRM Site
+        And Enter the Username & Password
+            | Username | Password |
+            | Admin    | admin123 |
+        When Click on login button
+        Then Valid the Dashboard
 
 
     Scenario Outline: Login with Valid Credentials on Practice Automation Site
